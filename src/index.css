@@ -1,2 +1,7 @@
-@import './styles.css';
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
 
+body {
+   @apply h-screen bg-white dark:bg-gray-800 text-black dark:text-white;
+}
