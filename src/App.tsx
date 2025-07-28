@@ -1,13 +1,11 @@
 import './App.css'
-
+import Test from './components/Navbar/Navbar';
 function App() {
 
   return (
-    <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   <div>
+    <Test />
+   </div>
   )
 }
 
