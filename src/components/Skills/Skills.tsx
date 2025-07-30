@@ -24,7 +24,8 @@ const technologiesAndFrameworks: Skill[] = [
   { name: 'Next.js', iconPath: '/assets/icons/nextjs.svg' },
   { name: 'Git', iconPath: '/assets/icons/git.svg' },
   { name: 'Docker', iconPath: '/assets/icons/docker.svg' },
-  { name: 'Tailwind CSS', iconPath: '/assets/icons/tailwindcss.svg' }, // Added Tailwind CSS
+  { name: 'Tailwind CSS', iconPath: '/assets/icons/tailwindcss.svg' }, 
+  { name: 'Angular', iconPath: '/assets/icons/angular.svg' }, 
 ];
 
 // Reusable SkillItem component
