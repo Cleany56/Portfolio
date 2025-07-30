@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-     <nav className="h-16 fixed top-0 w-full z-50 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}">
+     <nav className={`h-16 fixed top-0 w-full z-50 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
       <div className="flex items-center h-full px-4 relative"> {/* Main navbar content container */}
 
         {/* Left-aligned items container */}
@@ -56,9 +56,9 @@ const Navbar: React.FC = () => {
         <div className="flex items-center ml-auto relative">
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-4">
-                <a href="#" onClick={(e) => handleScrollTo('about', e)} className="font-medium">About</a>
-                <a href="#" onClick={(e) => handleScrollTo('projects', e)} className="font-medium">Projects</a>
-                <a href="#" onClick={(e) => handleScrollTo('contact', e)} className="font-medium">Contact</a>
+                <a href="/about" onClick={(e) => handleScrollTo('about', e)} className="font-medium">About</a>
+                <a href="/skills" onClick={(e) => handleScrollTo('skills', e)} className="font-medium">Skills</a>
+                <a href="/projects" onClick={(e) => handleScrollTo('projects', e)} className="font-medium">Projects</a>
             </div>
 
             {/* Hamburger Icon Button */}
@@ -80,8 +80,8 @@ const Navbar: React.FC = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-full right-0 mt-2 py-2 w-48 bg-gray-800 rounded-md shadow-lg z-40">
                     <a href="about" onClick={(e) => handleScrollTo('about', e)} className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-blue-400">About</a>
+                    <a href="skills" onClick={(e) => handleScrollTo('skills', e)} className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-blue-400">Skills</a>
                     <a href="projects" onClick={(e) => handleScrollTo('projects', e)} className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-blue-400">Projects</a>
-                    <a href="contact" onClick={(e) => handleScrollTo('contact', e)} className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-blue-400">Contact</a>
                 </div>
             )}
         </div> {/* End of right-aligned flex container */}

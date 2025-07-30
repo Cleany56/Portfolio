@@ -7,17 +7,35 @@ body {
   /* Set minimum height to ensure background covers the full viewport */
   min-height: 100vh;
   /* Replaced 'bg-white' with a subtle light gradient */
-  @apply bg-gradient-to-br from-gray-50 to-white; /* <--- CHANGED HERE */
+  @apply bg-gradient-to-br from-gray-200 to-white; /* <--- CHANGED HERE */
   /* Global text color for light mode (controlled by dark mode context toggling 'dark' class) */
-  @apply text-gray-900;
+  @apply text-black;
   /* Smooth transition for all color changes */
   @apply transition-colors duration-300;
+
+  @apply border-black;
 }
 /* Dark mode styles for the body, activated when 'dark' class is present */
 body.dark {
   /* Dark mode background gradient */
-  @apply bg-gradient-to-br from-gray-900 to-black;
+  @apply bg-gradient-to-br from-gray-800 to-black;
   /* Global text color for dark mode */
   /* If your context sets a base text color via a CSS variable or other means, you can remove this */
   @apply text-gray-50;
+  /* Smooth transition for all color changes */
+  @apply transition-colors duration-300;
+
+  @apply border-white;
+
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+
+.animate-blink-cursor {
+  animation: blink 0.6s infinite;
+  transition: none;
 }

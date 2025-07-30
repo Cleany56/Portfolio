@@ -7,7 +7,10 @@ const Hero: React.FC = () => {
   const phrases = ["a Web Developer", "a Problem Solver", "a Tech Enthusiast"]; // <--- CUSTOMIZE THESE PHRASES!
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
+    <div
+  className="min-h-[calc(100vh-4rem)] flex items-center justify-center
+             mb-24 md:mb-32 lg:mb-48"
+  > 
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 py-8 md:py-0">
 
         {/* Left side: Text, Buttons, and now Typewriter Effect */}
@@ -70,7 +73,7 @@ const Hero: React.FC = () => {
           {/* NEW: Typewriter Effect Component */}
           <TypewriterEffect
             staticPrefix="I am" // "I am a" can be here, then phrases start with "Web Developer" etc.
-            phrases={phrases}
+            phrases={["a Web Developer", "a Full Stack Developer", "a Software Engineer"]}
             // You can optionally pass custom speeds/pauses:
             // typingSpeed={120}
             // deletingSpeed={60}
@@ -82,7 +85,7 @@ const Hero: React.FC = () => {
         {/* Right side: Image */}
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
           <img
-            src="src\assets\heropic.png"
+            src="\assets\heropic.png"
             alt="Christian Harris"
             className="w-2/3 md:w-full max-w-sm md:max-w-lg rounded-full shadow-lg object-cover aspect-square"
           />

@@ -4,10 +4,11 @@ import React from 'react';
 const About: React.FC = () => {
   return (
     // Added scroll-mt-16 to ensure the section stops below the fixed navbar
-    <section
-      id="about"
-      className="mt-20 py-16 px-4 md:px-8 lg:px-16 max-w-4xl mx-auto scroll-mt-16" // <-- Add this class
-    >
+ <section
+  id="about"
+  className="py-16 px-4 md:px-8 lg:px-16 max-w-4xl mx-auto scroll-mt-16
+             mb-40 md:mb-56 lg:mb-72"
+  >
       <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Christian.</h1>
       <h2 className="text-2xl md:text-3xl font-semibold mb-6">About Me</h2>
       <p className="text-base md:text-lg leading-relaxed">
