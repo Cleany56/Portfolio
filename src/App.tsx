@@ -4,6 +4,7 @@ import { DarkModeContext } from './DarkModeContext';
 import { useContext, useEffect } from 'react';
 import './index.css';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 function App() {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
   useEffect(() => {
@@ -12,8 +13,11 @@ function App() {
   }, [isDarkMode]);
   return (
    <div className={`app ${isDarkMode ? 'dark' : ''}`}>
-    <Navbar />
-    <Hero />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+      </main>
    </div>
   )
 }

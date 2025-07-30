@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-     <nav className='h-16 fixed top-0 w-full z-50 bg-opacity-90'>
+     <nav className="h-16 fixed top-0 w-full z-50 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}">
       <div className="flex items-center h-full px-4 relative"> {/* Main navbar content container */}
 
         {/* Left-aligned items container */}

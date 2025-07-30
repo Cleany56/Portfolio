@@ -2,6 +2,22 @@
 @tailwind utilities;
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Base styles for the body (light mode) */
 body {
-   @apply h-screen bg-white dark:bg-gray-800 text-black dark:text-white;
+  /* Set minimum height to ensure background covers the full viewport */
+  min-height: 100vh;
+  /* Replaced 'bg-white' with a subtle light gradient */
+  @apply bg-gradient-to-br from-gray-50 to-white; /* <--- CHANGED HERE */
+  /* Global text color for light mode (controlled by dark mode context toggling 'dark' class) */
+  @apply text-gray-900;
+  /* Smooth transition for all color changes */
+  @apply transition-colors duration-300;
+}
+/* Dark mode styles for the body, activated when 'dark' class is present */
+body.dark {
+  /* Dark mode background gradient */
+  @apply bg-gradient-to-br from-gray-900 to-black;
+  /* Global text color for dark mode */
+  /* If your context sets a base text color via a CSS variable or other means, you can remove this */
+  @apply text-gray-50;
 }
