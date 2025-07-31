@@ -28,5 +28,8 @@ module.exports = {
   
   // 'variants' is typically not needed as a top-level property in v3+,
   // as responsive and dark mode variants are enabled by default.
-  plugins: [],
+  
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

@@ -39,3 +39,13 @@ body.dark {
   animation: blink 0.6s infinite;
   transition: none;
 }
+
+/* Section container spacing */
+.section-container {
+  @apply mb-32 md:mb-48 lg:mb-64;
+}
+
+/* First section needs special treatment */
+.section-container:first-child {
+  @apply mb-0;
+}

@@ -61,7 +61,7 @@ const SkillItem: React.FC<Skill> = ({ name, iconPath }) => {
 
 const Skills: React.FC = () => {
   return (
-    <section className="container mx-auto px-4 pb-16 pt-32 md:pt-48 lg:pt-64" id="skills">
+    <section className="container mx-auto px-4 py-16 scroll-mt-16" id="skills">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-400">
         Tech Stack.
       </h2>

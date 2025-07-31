@@ -7,6 +7,7 @@ import './index.css'; // Assuming this imports your Tailwind base styles
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -22,9 +23,10 @@ function App() {
       <Navbar />
       {/* main takes the remaining flexible space and distributes its children */}
     <main className="flex flex-col">
-        <Hero />
-        <About />
-        <Skills />
+        <div className="section-container"><Hero /></div>
+        <div className="section-container"><About /></div>
+        <div className="section-container"><Skills /></div>
+        <div className="section-container"><Projects /></div>
       </main>
     </div>
   )
