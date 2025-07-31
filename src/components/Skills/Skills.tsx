@@ -16,6 +16,8 @@ const technicalLanguages: Skill[] = [
   { name: 'JavaScript', iconPath: '/assets/icons/javascript.svg' },
   { name: 'TypeScript', iconPath: '/assets/icons/typescript.svg' },
   { name: 'SQL', iconPath: '/assets/icons/sql.svg' },
+  { name: 'Java', iconPath: '/assets/icons/java.svg' },
+  { name: 'C++', iconPath: '/assets/icons/cpp.svg' },
 ];
 
 const technologiesAndFrameworks: Skill[] = [
