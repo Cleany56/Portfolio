@@ -31,13 +31,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A full-stack task management application with user authentication and real-time updates.",
-      techStack: ["Angular", "Node.js", "MongoDB", "Express"],
+      title: "Expense Tracker App",
+      description: "This project is a modern mobile application designed to help users track their expenses, manage budgets, and visualize their financial goals. The app features a clean, intuitive interface with real-time charts, account summaries, and a debt calculator that demonstrates the impact of different repayment strategies. Users can securely add transactions, monitor monthly spending, and set savings goals, all while enjoying seamless navigation and responsive design. The app prioritizes security and privacy, with sensitive data protected and no unnecessary logging of personal information.",
+      techStack: ["React Native", "Node.js", "MongoDB", "Realm", "Typescript" ,"Express.js"],
       mediaType: "video",
-      mediaSrc: "https://www.youtube.com/embed/your-video-id", // Replace with actual YouTube embed URL
-      repoLink: "https://github.com/yourusername/task-manager",
-      liveLink: "https://yourtaskapp.com"
+      mediaSrc: "https://youtube.com/embed/i8rzFOM2tus?si=Yv3HcIEKzQKucjZ5", // Replace with actual YouTube embed URL
+      repoLink: "https://github.com/Cleany56/Budget"
     },
     // Add more projects as needed
   ];
@@ -47,11 +46,11 @@ const Projects: React.FC = () => {
     switch (project.mediaType) {
       case 'video':
         return (
-          <div className="aspect-w-16 aspect-h-9 w-full">
+          <div className="aspect-w-16 aspect-h-9 w-full min-h-[300px]">
             <iframe 
               src={project.mediaSrc} 
               title={project.title}
-              className="w-full h-full rounded-lg"
+              className="w-full h-full rounded-lg min-h-[300px]"
               allowFullScreen
             ></iframe>
           </div>
